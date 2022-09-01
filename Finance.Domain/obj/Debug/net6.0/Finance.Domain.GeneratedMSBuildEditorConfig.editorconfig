@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Finance.Domain
-build_property.ProjectDir = /home/rafael/repos/finance/Finance.Domain/
+build_property.ProjectDir = c:\repos\finance\Finance.Domain\

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3ovTufvGYze3ugEuUkAMHMcqYPwwGKQyhCfuDLBTeiqrBpu667kpVLvVOvuhv2UvwTnjKczowxsNzi8AlCeMxw==",
+  "dgSpecHash": "UMGQnUGLKfaTf0D8Z3L0GJSkdxqa916oyKSdlD4+aoixNfw2+OoxhCHXyrp9bJThyhb+B4NwIDF7T/vJdbGfYg==",
   "success": true,
-  "projectFilePath": "/home/rafael/repos/finance/Finance.Domain/Finance.Domain.csproj",
+  "projectFilePath": "C:\\repos\\finance\\Finance.Domain\\Finance.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
