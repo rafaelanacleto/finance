@@ -1,22 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.Domain", "Finance.Domain\Finance.Domain.csproj", "{21D8F49A-47FE-4514-9460-641ACF1559DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Finance.Domain", "Finance.Domain\Finance.Domain.csproj", "{21D8F49A-47FE-4514-9460-641ACF1559DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Finance.Infra.Data", "Finance.Infra.Data\Finance.Infra.Data.csproj", "{29E9A752-3CC0-4360-AC47-F9F322381919}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{21D8F49A-47FE-4514-9460-641ACF1559DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{21D8F49A-47FE-4514-9460-641ACF1559DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21D8F49A-47FE-4514-9460-641ACF1559DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{21D8F49A-47FE-4514-9460-641ACF1559DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29E9A752-3CC0-4360-AC47-F9F322381919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29E9A752-3CC0-4360-AC47-F9F322381919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29E9A752-3CC0-4360-AC47-F9F322381919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29E9A752-3CC0-4360-AC47-F9F322381919}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76FAFF74-CFDC-4F12-8090-691AF11E378B}
 	EndGlobalSection
 EndGlobal
