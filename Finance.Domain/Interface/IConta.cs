@@ -9,7 +9,9 @@ namespace Finance.Domain.Interface
     public interface IConta
     {
         Task<List<Conta>> GetContas();
-
-        
+        Task<Conta> GetById(int? id);
+        Task<Conta> Create(Conta conta);
+        Task<Conta> Update(Conta conta);
+        Task<Conta> Remove(Conta conta);
     }
 }
