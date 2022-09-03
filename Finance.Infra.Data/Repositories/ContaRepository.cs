@@ -21,9 +21,11 @@ public class ContaRepository : IConta
         return category;
     }
 
-    public async Task<Conta> GetById(int? id)
+    public async Task<Conta> GetById(int id)
     {
-        return await _contaContext.Contas.FindAsync(id);
+        var retorno = await _contaContext.Contas.FindAsync(id);
+        
+        return retorno;
     }
 
     public async Task<IEnumerable<Conta>> GetCatories()
