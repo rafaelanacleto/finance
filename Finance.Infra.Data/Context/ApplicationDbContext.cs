@@ -14,11 +14,10 @@ namespace Finance.Infra.Data.Context
             : base(options)
         { }
 
-        //public DbSet<Category> Categories { get; set; }
-
         public DbSet<Conta> Contas {get; set;}
         public DbSet<PlanoConta> PlanosContas {get; set;}
         public DbSet<Transacao> Transacoes { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
