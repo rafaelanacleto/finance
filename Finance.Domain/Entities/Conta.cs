@@ -13,11 +13,10 @@ namespace Finance.Domain.Entities
         [Required(ErrorMessage = "Informe o Nome da Conta!")]
         public string? Nome { get; set; }
         [Required(ErrorMessage = "Informe o Saldo da Conta!")]
-        public double Saldo { get; set; }
-        public int Usuario_Id { get; set; }
+        public double Saldo { get; set; }        
 
 
-        public Conta(int id, string nome, double saldo, int usuario_id)
+        public Conta(int id, string nome, double saldo)
         {
             DomainExceptionValidation.When(id < 0, "Invalis Id 0");
             Id = id;

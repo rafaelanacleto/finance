@@ -15,8 +15,6 @@ namespace Finance.Domain.Entities
 
         public string? Tipo { get; set; }
 
-        public int Usuario_Id { get; set; }
-
         public PlanoConta(int id, string descricao)
         {
             DomainExceptionValidation.When(id < 0, "Invalis Id 0");
@@ -37,7 +35,6 @@ namespace Finance.Domain.Entities
 
 
         //ver o update TRODO
-
 
 
 
