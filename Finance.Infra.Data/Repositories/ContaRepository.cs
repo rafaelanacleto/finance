@@ -1,54 +1,56 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 using Finance.Domain.Entities;
 using Finance.Domain.Interface;
 using Finance.Infra.Data.Context;
+using Microsoft.EntityFrameworkCore;
 
-public class ContaRepository : IConta
+namespace Finance.Infra.Data.Repositories
 {
-    private ApplicationDbContext _contaContext;
 
-    public ContaRepository(ApplicationDbContext context)
+    public class ContaRepository : IConta
     {
-        _contaContext = context;
-    }
+        private ApplicationDbContext _contaContext;
 
-    public async Task<Conta> Create(Conta category)
-    {
-        _contaContext.Add(category);
-        await _contaContext.SaveChangesAsync();
-        return category;
-    }
+        public ContaRepository(ApplicationDbContext context)
+        {
+            _contaContext = context;
+        }
 
-    public async Task<Conta> GetById(int id)
-    {
-        var retorno = await _contaContext.Contas.FindAsync(id);
-        
-        return retorno;
-    }
+        public async Task<Conta> Create(Conta category)
+        {
+            _contaContext.Add(category);
+            await _contaContext.SaveChangesAsync();
+            return category;
+        }
 
-    public async Task<IEnumerable<Conta>> GetCatories()
-    {
-        return await _contaContext.Contas.ToListAsync();
-    }
+        public async Task<Conta> GetById(int id)
+        {
+            Conta? retorno = await _contaContext.Contas.FindAsync(id);
 
-    public Task<List<Conta>> GetContas()
-    {
-        throw new NotImplementedException();
-    }
+            return retorno;
+        }
 
-    public async Task<Conta> Remove(Conta Conta)
-    {
-        _contaContext.Remove(Conta);
-        await _contaContext.SaveChangesAsync();
-        return Conta;
-    }
+        public async Task<IEnumerable<Conta>> GetCatories()
+        {
+            return await _contaContext.Contas.ToListAsync();
+        }
 
-    public async Task<Conta> Update(Conta Conta)
-    {
-        _contaContext.Update(Conta);
-        await _contaContext.SaveChangesAsync();
-        return Conta;
+        public Task<List<Conta>> GetContas()
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<Conta> Remove(Conta Conta)
+        {
+            _contaContext.Remove(Conta);
+            await _contaContext.SaveChangesAsync();
+            return Conta;
+        }
+
+        public async Task<Conta> Update(Conta Conta)
+        {
+            _contaContext.Update(Conta);
+            await _contaContext.SaveChangesAsync();
+            return Conta;
+        }
     }
 }

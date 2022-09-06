@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Conta\Handlers\" />
-    <Folder Include="Features\Conta\Queries\" />
+    <Folder Include="Features\Contas\Handlers\" />
+    <Folder Include="Features\Contas\Queries\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Mappings\" />
     <Folder Include="Services\" />

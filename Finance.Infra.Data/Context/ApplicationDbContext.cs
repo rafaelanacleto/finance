@@ -1,10 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Finance.Domain.Entities;
+﻿using Finance.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace Finance.Infra.Data.Context
 {
@@ -14,8 +9,8 @@ namespace Finance.Infra.Data.Context
             : base(options)
         { }
 
-        public DbSet<Conta> Contas {get; set;}
-        public DbSet<PlanoConta> PlanosContas {get; set;}
+        public DbSet<Conta> Contas { get; set; }
+        public DbSet<PlanoConta> PlanosContas { get; set; }
         public DbSet<Transacao> Transacoes { get; set; }
 
 
