@@ -10,5 +10,6 @@ namespace Finance.Application.Features.Conta.Commands
 {
     public abstract class ContaCommand : IRequest<Conta>
     {
+
     }
 }

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace CleanArchMvc.Infra.Data.EntitiesConfiguration
+namespace Finance.Infra.Data.EntitiesConfiguration
 {
     public class ContaConfiguration : IEntityTypeConfiguration<Conta>
     {
