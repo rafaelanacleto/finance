@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 namespace Finance.Application.Features.Contas.Commands
 {
     public class ContaUpdateCommand : ContaCommand
-    {
-        public int Id { get; set; }
+    {        
     }
 }
