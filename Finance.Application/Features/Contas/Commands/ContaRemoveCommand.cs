@@ -8,7 +8,13 @@ using System.Threading.Tasks;
 
 namespace Finance.Application.Features.Contas.Commands
 {
-    public class ContaUpdateCommand : IRequest<Conta>
-    {        
+    public class ContaRemoveCommand : IRequest<Conta>
+    {
+        public int Id { get; set; }
+
+        public ContaRemoveCommand(int id)
+        {
+            Id = id;
+        }
     }
 }
