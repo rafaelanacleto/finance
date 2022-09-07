@@ -6,7 +6,7 @@ using Finance.Domain.Entities;
 
 namespace Finance.Domain.Interface
 {
-    public interface IConta
+    public interface IContaRepository
     {
         Task<List<Conta>> GetContas();
         Task<Conta> GetById(int id);

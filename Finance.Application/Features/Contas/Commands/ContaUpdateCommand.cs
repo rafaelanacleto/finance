@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Finance.Application.Features.Contas.Commands
 {
-    public class ContaUpdateCommand : IRequest<Conta>
+    public class ContaUpdateCommand : ContaCommand
     {        
     }
 }

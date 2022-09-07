@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Finance.Domain.Interface
 {
-    public interface IPlanoConta
+    public interface IPlanoContaRepository
     {
         Task<List<PlanoConta>> GetContas();
         Task<PlanoConta> GetById(int? id);
