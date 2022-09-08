@@ -19,14 +19,18 @@ namespace Finance.Application.Features.Contas.Handlers
            _contaRepository = contaRepository;
         }      
 
-        public Task<Conta> Handle(ContaCreateCommand request, CancellationToken cancellationToken)
+        public async Task<Conta> Handle(ContaCreateCommand request, CancellationToken cancellationToken)
         {
 
             var conta = new Conta(request.Id, request.Nome, request.Saldo);
 
+            if (conta == null)
+            {
+                throw new ApplicationException($"Erro ao criar Conta");
+            }
 
+            return await _contaRepository.Create(conta);
 
-            throw new NotImplementedException();
         }
     }
 }
