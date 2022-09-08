@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace Finance.Infra.Data.Repositories
 {
 
-    public class ContaRepository : IConta
+    public class ContaRepository : IContaRepository
     {
         private ApplicationDbContext _contaContext;
 
